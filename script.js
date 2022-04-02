@@ -20,7 +20,6 @@ const taxes = 0.11;
 
 console.log(100 * taxes);
 
-
 let answer = 100 * taxes;
 
 document.write("<h6>Hello Chris.  The answer is " + answer + "</h6>");
