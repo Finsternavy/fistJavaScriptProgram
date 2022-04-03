@@ -7,9 +7,17 @@
 }
 .header{
     position: relative;
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+}
+.hide-mobile{
+    display: none;
+}
+.video-info,
+.views-button-bar-container,
+.comments,
+.author-wrapper,
+.comment-wrapper{
+    margin: 10px;
 }
 
 .top-nav{
@@ -23,27 +31,52 @@
     padding: 0;
 }
 .spy-glass-icon{
-    border: 1px solid black;
+    color: black;
     padding-left: 15px;
 }
 .right-menu > *{
     padding-right: 1rem;
     color: black;
 }
+.video-img{
+    position: relative;
+    width: 100%;
+}
+.video-img img{
+    width: 100%;
+}
+.video-info{
+    font-size: smaller;
+}
+.views-button-bar-container{
+    display: flex;
+    flex-direction: column;
+}
 .button-bar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-bottom: 10px;
+    padding-block: 10px;
     border-bottom: 1px solid gray;
 }
 .button-bar > *{
     color: black;
 }
+.button-bar a{
+    font-size: 10px;
+}
 .author-wrapper{
     display: flex;
     padding-bottom: 10px;
     border-bottom: 1px solid gray;
+}
+.author-wrapper img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+.main-description{
+    margin-top: 10px;
 }
 .comments{
     padding-block: 10px;
@@ -51,14 +84,34 @@
 }
 .comment-wrapper{
     display: flex;
+    align-items: center;
     padding-bottom: 10px;
     border-bottom: 1px solid gray;
 }
+.comment-wrapper img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
 .ad-container{
     display: flex;
+    margin: 10px;
+    text-align: left;
 }
 .ad-image{
+    height: 100%;
+    width: 100%;
+    max-height: 216px;
+    max-width: 384px;
     position: relative;
+    overflow: hidden;
+}
+.ad-image img{
+    height: 100%;
+    width: 100%;
+}
+.video-content{
+    padding-left: 10px;
 }
 .video-length-label{
     position: absolute;

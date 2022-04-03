@@ -23,34 +23,42 @@ document.write(`
 <header class="header">
 <nav class="top-nav">
     <div class="left-menu">
-        <img src="img/hamburger_menu_icon.png" alt="">
+        <img class="hide-mobile" src="img/hamburger_menu_icon.png" alt="">
         <img src="img/youtube_logo.png" alt="">
     </div>
     <div class="center-menu">
-        <input type="text">
+        <input class="hide-mobile" type="text">
         <a class="spy-glass-icon" href=""><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a class="mic-icon" href=""><i class="fa-solid fa-microphone"></i></a>
+        <a class="mic-icon hide-mobile" href=""><i class="fa-solid fa-microphone"></i></a>
     </div>
     <div class="right-menu">
-        <a class="create-icon" href=""><i class="fa-solid fa-video"></i></a>
-        <a class="apps-icon" href=""><i class="fa-brands fa-app-store"></i></a>
-        <a class="bell-icon" href=""><i class="fa-solid fa-bell"></i></a>
+        <a class="create-icon hide-mobile" href=""><i class="fa-solid fa-video"></i></a>
+        <a class="apps-icon hide-mobile" href=""><i class="fa-brands fa-app-store"></i></a>
+        <a class="bell-icon hide-mobile" href=""><i class="fa-solid fa-bell"></i></a>
         <a class="user-icon" href=""><i class="fa-solid fa-user"></i></a>
     </div>
 </nav>
 <div class="video">
-    <img src="img/YouTube_main_video_img.png" alt="">
-    <h3>#Asmongold</h3>
-    <h2>${videoTitle}</h2>
-    <div class="button-bar">
-        <p>${views} views - ${datePublished}</p>
-        <a href="#"><i class="fa-solid fa-thumbs-up"></i> ${likes}K</a>
-        <a href="#"><i class="fa-solid fa-thumbs-down"></i> ${dislikes}</a>
-        <a href="#"><i class="fa-solid fa-share"></i> SHARE</a>
-        <a href="#"><i class="fa-solid fa-download"></i> DOWNLOAD</a>
-        <a href="#"><i class="fa-solid fa-scissors"></i> CLIP</a>
-        <a href="#"><i class="fa-solid fa-plus"></i> SAVE</a>
-        <a href="#"><i class="fa-solid fa-plus"></i> ...</a>
+    <div class="video-img">
+        <img src="img/YouTube_main_video_img.png" alt="">
+    </div>
+    <div class="video-info">
+        <h3>#Asmongold</h3>
+        <h2>${videoTitle}</h2>
+    </div>
+    <div class="views-button-bar-container">
+        <div class="views-container">
+            <p>${views} views - ${datePublished}</p>
+        </div>
+        <div class="button-bar">
+            <a href="#"><i class="fa-solid fa-thumbs-up"></i> ${likes}K</a>
+            <a href="#"><i class="fa-solid fa-thumbs-down"></i> ${dislikes}</a>
+            <a href="#"><i class="fa-solid fa-share"></i> SHARE</a>
+            <a href="#"><i class="fa-solid fa-download"></i> DOWNLOAD</a>
+            <a href="#"><i class="fa-solid fa-scissors"></i> CLIP</a>
+            <a href="#"><i class="fa-solid fa-plus"></i> SAVE</a>
+            <a href="#"><i class="fa-solid fa-plus"></i> ...</a>
+        </div>
     </div>
 </div>
 
@@ -61,7 +69,7 @@ document.write(`
     <div class="video-description">
         <p>${userName}</p>
         <p>${subscribers}M subscribers</p>
-        <p>${vidDescription}</p>
+        <p class="main-description">${vidDescription}</p>
     </div>
 </div>
 
